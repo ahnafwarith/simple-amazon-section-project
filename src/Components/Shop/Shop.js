@@ -4,6 +4,9 @@ import './Shop.css'
 
 const Shop = () => {
     const [products, handleProducts] = useState([]);
+    const [cart, handleCart] = useState([]);
+
+
 
     useEffect(() => {
 
@@ -13,8 +16,11 @@ const Shop = () => {
 
     }, []);
 
-    const handleAddToCart = (products) => {
-        console.log(products)
+    const handleAddToCart = (product) => {
+        console.log(product)
+        //cart.push(product)
+        const newCart = [...cart, product];
+        handleCart(newCart);
     }
 
     return (
@@ -25,7 +31,8 @@ const Shop = () => {
                 }
             </div>
             <div className='sidebar'>
-                <h1>This is Sidebar</h1>
+                <h1>Order Summary</h1>
+                <h3>Selected Items: {cart.length}</h3>
             </div>
         </div>
     );
