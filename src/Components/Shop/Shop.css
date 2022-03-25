@@ -13,3 +13,7 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+.sidebar{
+    background-color: #FFE0B3;
+    padding: 10px;
+}

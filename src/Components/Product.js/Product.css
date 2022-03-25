@@ -27,6 +27,9 @@
     margin-top: 7px;
 }
 .btn-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background: #FFE0B3;
     border: none;
@@ -36,6 +39,12 @@
     left: 0;
     height: 42px;
 }
+.add-to-cart-text{
+    position: relative;
+    top: -5px;
+    margin-right: 3px;
+}
+
 .btn-cart:hover{
     background-color: orange;
 }
